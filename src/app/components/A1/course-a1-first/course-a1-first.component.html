@@ -1,0 +1,58 @@
+<nav>
+  <ul class="navbar">
+    <li *ngFor="let lesson of lessons; let i = index">
+      <a (click)="selectLesson(i)" [class.active]="selectedLesson === i">{{ lesson }}</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="content">
+  <div *ngIf="selectedLesson === 0">
+    <h2>Personal Information in English</h2>
+    <p>Content about personal information...</p>
+  </div>
+  <div *ngIf="selectedLesson === 1">
+    <h2>Spelling Your Name in English</h2>
+    <p>Content about spelling your name...</p>
+  </div>
+  <div *ngIf="selectedLesson === 2">
+    <h2>Numbers in English</h2>
+    <p>Content about numbers in English...</p>
+  </div>
+  <div *ngIf="selectedLesson === 3">
+    <h2>Ask and Answer Your Age in English</h2>
+    <p>Content about asking and answering age...</p>
+  </div>
+  <div *ngIf="selectedLesson === 4">
+    <h2>Occupations in English</h2>
+    <p>Content about occupations in English...</p>
+  </div>
+  <div *ngIf="selectedLesson === 5">
+    <h2>Days of the Week in English</h2>
+    <p>Content about days of the week...</p>
+  </div>
+  <div *ngIf="selectedLesson === 6">
+    <h2>Use "is" or "are" in Descriptions</h2>
+    <p>Content about using "is" or "are"...</p>
+  </div>
+  <div *ngIf="selectedLesson === 7">
+    <h2>Personal Introduction in English</h2>
+    <p>Content about personal introductions...</p>
+  </div>
+  <div *ngIf="selectedLesson === 8">
+    <h2>Describe People Using "his", "her", "their"</h2>
+    <p>Content about describing people...</p>
+  </div>
+  <div *ngIf="selectedLesson === 9">
+    <h2>Use "who" in Questions and Answers</h2>
+    <p>Content about using "who" in questions...</p>
+  </div>
+  <div *ngIf="selectedLesson === 10">
+    <h2>Make Descriptions Using "there is" and "there are"</h2>
+    <p>Content about using "there is" and "there are"...</p>
+  </div>
+  <div *ngIf="selectedLesson === 11">
+    <h2>Introduce Yourself in English</h2>
+    <p>Content about introducing yourself...</p>
+  </div>
+</div>
